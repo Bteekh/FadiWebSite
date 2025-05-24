@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>اتصل بنا - مدونة فادي</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* بسيط لضبط صور الروابط */
+    .social-links img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      vertical-align: middle;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .social-links img:hover {
+      transform: scale(1.1);
+    }
+    .social-links li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="images/FadiLogo.png" alt="شعار فادي" class="logo-fixed" />
+
+  <header>
+    <h1>اتصل بفادي</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html" class="gif-nav-link">
+            <span class="gif-icon" style="background-image: url('images/home.gif');"></span>
+            <span class="tooltip-text">الرئيسية</span>
+          </a>
+        </li>
+        <li>
+          <a href="programs.html" class="gif-nav-link">
+            <span class="gif-icon" style="background-image: url('images/Workout_schedules.gif');"></span>
+            <span class="tooltip-text">برامج التمارين</span>
+          </a>
+        </li>
+        <li>
+          <a href="nutrition.html" class="gif-nav-link">
+            <span class="gif-icon" style="background-image: url('images/Nutritional Advice.gif');"></span>
+            <span class="tooltip-text">النصائح الغذائية</span>
+          </a>
+        </li>
+        <li>
+          <a href="goals.html" class="gif-nav-link">
+            <span class="gif-icon" style="background-image: url('images/Exercise-schedule.png');"></span>
+            <span class="tooltip-text">أهداف اللياقة</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" class="gif-nav-link">
+            <span class="gif-icon" style="background-image: url('images/call_us.png');"></span>
+            <span class="tooltip-text">اتصل بنا</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>نموذج التواصل</h2>
+      <form action="https://formspree.io/f/mrbqjoag" method="POST">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">الرسالة:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">إرسال</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>تابع فادي</h2>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.instagram.com/fadybakri?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" title="إنستغرام فادي">
+            <img src="images/instagram-logo.png" alt="إنستغرام" />
+          </a>
+        </li>
+        <li>
+          <a href="https://youtube.com/@fadybakri?si=zpKFL2swaIfzsWpm" target="_blank" rel="noopener noreferrer" title="يوتيوب فادي">
+            <img src="images/Youtube-logo.png" alt="يوتيوب" />
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 الحقوق محفوظة لدى 🍉ماهر محمد الزيادات🍉</p>
+  </footer>
+</body>
+</html>
